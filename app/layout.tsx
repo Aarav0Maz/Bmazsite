@@ -7,9 +7,13 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://keystoneproperties.vercel.app'),
   title: 'Keystone Property Solutions | Worry-Free Real Estate Investing',
   description: 'Full-service property management company in the Greater Toronto Area specializing in tenant selection, rent collection, maintenance coordination, inspections, and LTB assistance. Your trusted partner in worry-free real estate investing.',
   generator: 'v0.app',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       {
@@ -26,6 +30,30 @@ export const metadata: Metadata = {
       },
     ],
     apple: '/apple-icon.png',
+  },
+  openGraph: {
+    title: 'Keystone Property Solutions | Worry-Free Real Estate Investing',
+    description:
+      'Full-service property management company in the Greater Toronto Area specializing in tenant selection, rent collection, maintenance coordination, inspections, and LTB assistance.',
+    url: '/',
+    siteName: 'Keystone Property Solutions',
+    locale: 'en_CA',
+    type: 'website',
+    images: [
+      {
+        url: '/apple-icon.png',
+        width: 136,
+        height: 132,
+        alt: 'Keystone Property Solutions logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Keystone Property Solutions | Worry-Free Real Estate Investing',
+    description:
+      'Full-service property management company in the Greater Toronto Area specializing in tenant selection, rent collection, maintenance coordination, inspections, and LTB assistance.',
+    images: ['/apple-icon.png'],
   },
 }
 
